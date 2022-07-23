@@ -16,6 +16,8 @@ import Card4 from './components/Card4';
 import App2 from './components/App2';
 import ComponentThatToggleModal from './components/ComponentThatToggleModal';
 import Autocomplete from './components/Autocomplete';
+import MarkdownEditor from './components/MarkdownEditor';
+
 
 const definitions = [
   { dt: "Бандерівці", dd: "патріоти України, ненависники русні" },
@@ -58,6 +60,7 @@ function App() {
         <App2 />
         <ComponentThatToggleModal />
         <Autocomplete />
+        <MarkdownEditor onContentChange={console.log}/>
       </div>
     </div>
   );
